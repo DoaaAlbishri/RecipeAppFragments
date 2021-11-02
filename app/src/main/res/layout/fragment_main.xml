@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Add details to make a post request"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Author Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edIngredents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Ingredents"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Instruction"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btsave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save receipe" />
+
+        <Button
+            android:id="@+id/btview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View receipes" />
+    </LinearLayout>
+
+</FrameLayout>
