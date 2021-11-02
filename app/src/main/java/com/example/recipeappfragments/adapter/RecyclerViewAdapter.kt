@@ -8,7 +8,6 @@ import com.example.recipeappfragments.R
 import com.example.recipeappfragments.dataBase.RecipeDetails
 import com.example.recipeappfragments.fragment_main2
 import kotlinx.android.synthetic.main.item_row.view.*
-//private var words: List<RecipeDetails>
 class RecyclerViewAdapter(private val mainActivity2: fragment_main2) : RecyclerView.Adapter<RecyclerViewAdapter.ItemViewHolder>(){
     class ItemViewHolder(itemView : View) :RecyclerView.ViewHolder(itemView)
     private var words =  listOf<RecipeDetails>()

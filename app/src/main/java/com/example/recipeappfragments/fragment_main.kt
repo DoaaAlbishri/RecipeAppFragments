@@ -32,10 +32,9 @@ class fragment_main : Fragment() {
         val show = view.findViewById<Button>(R.id.btview)
 
         show.setOnClickListener {
-//            intent = Intent(applicationContext, MainActivity2::class.java)
-//            startActivity(intent)
         findNavController().navigate(R.id.action_fragment_main_to_fragment_main2)
         }
+
         savebtn.setOnClickListener {
             if (title.text.isEmpty() ||
                 name.text.isEmpty() ||

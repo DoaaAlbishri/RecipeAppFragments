@@ -11,13 +11,15 @@ import com.example.recipeappfragments.dataBase.RecipeDetails
 import com.example.recipeappviewmodel.viewModel.MyViewModel
 
 class MainActivity : AppCompatActivity() {
-
-    private val myViewModel by lazy { ViewModelProvider(this).get(MyViewModel::class.java)}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
+}
 
-        val title = findViewById<EditText>(R.id.edTitle)
+/*
+    private val myViewModel by lazy { ViewModelProvider(this).get(MyViewModel::class.java)}
+   val title = findViewById<EditText>(R.id.edTitle)
         val name = findViewById<EditText>(R.id.edName)
         val Ingredents = findViewById<EditText>(R.id.edIngredents)
         val Instruction = findViewById<EditText>(R.id.edInstruction)
@@ -54,4 +56,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-}
+ */

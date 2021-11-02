@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recipeappfragments.adapter.RecyclerViewAdapter
@@ -28,13 +29,18 @@ class fragment_main2 : Fragment() {
         val view = inflater.inflate(R.layout.fragment_main2, container, false)
 
         myRv = view.findViewById(R.id.recyclerView)
+        val backbtn = view.findViewById<Button>(R.id.backbtn)
         Rv = RecyclerViewAdapter(this)
+
         myViewModel.getRecipes().observe(viewLifecycleOwner, {
                 recipes -> Rv.update(recipes)
             println("show")
         })
         myRv.adapter = Rv
         myRv.layoutManager = LinearLayoutManager(requireContext())
+        backbtn.setOnClickListener {
+            findNavController().navigate(R.id.action_fragment_main2_to_fragment_main)
+        }
         return view
     }
     fun update(ID:Int) {
